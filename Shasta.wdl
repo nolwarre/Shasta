@@ -22,14 +22,13 @@ task shasta {
   #define command to execute when this task runs
   #implementing config in the command will result in input not being read.
   command {
-    cd /usr/src
-    ./shasta-Linux-0.5.1 >> Assembly.fasta
+    ./shasta-Linux-0.5.1 > Assembly.fasta
   }
   #specify the output(s) of this task so cromwell will keep track of them
   output {
     File outFile = "Assembly.fasta"
   }
   runtime {
-    docker: "45e8cf8f3576"
+    docker: docker_image
   }
 }
