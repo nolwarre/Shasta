@@ -32,6 +32,6 @@ task shasta {
     File outFile = "Assembly.fasta"
   }
   runtime {
-    docker: "docker_image"
+    docker: docker_image
   }
 }
