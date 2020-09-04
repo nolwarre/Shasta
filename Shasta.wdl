@@ -17,19 +17,19 @@ task shasta {
     File reads
     File config
     String outdirectory
+    String docker_image
   }
   #define command to execute when this task runs
   #implementing config in the command will result in input not being read.
   command {
-      cat ${reads} > reads.fasta
-      cat ${config} > shasta.config
-      docker run -v `pwd`:/data kishwars/shasta:latest \
-      --input reads.fasta \
-      --assemblyDirectory ${outdirectory}
-      cat "./${outdirectory}/Assembly.fasta" > Assembly.fasta
+    ./shasta-Linux-0.5.1 \
+    --input ${reads} > Assembly.fasta
   }
   #specify the output(s) of this task so cromwell will keep track of them
   output {
     File outFile = "Assembly.fasta"
+  }
+  runtime {
+    docker: docker_image
   }
 }
