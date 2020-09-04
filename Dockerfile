@@ -13,8 +13,8 @@ RUN apt-get update && \
 WORKDIR /usr/src
 
 # download software
-RUN wget https://github.com/chanzuckerberg/shasta/releases/download/0.5.1//shasta-Linux-0.5.1
+RUN wget https://github.com/chanzuckerberg/shasta/releases/download/0.5.1/shasta-Linux-0.5.1
 
-RUN chmod +x shasta-Linux-0.5.1
+RUN chmod +x /usr/src/shasta-Linux-0.5.1
 
 ENV PATH="/usr/src/shasta-Linux-0.5.1:${PATH}"
