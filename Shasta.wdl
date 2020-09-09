@@ -18,13 +18,16 @@ task shasta {
     File config
     String outdirectory
     String docker_image
+    Int RAM
+    Int threadCount
   }
   #define command to execute when this task runs
   #implementing config in the command will result in input not being read.
   command {
-    /usr/src/shasta-Linux-0.5.1 \
+    /usr/src/shasta-Ubuntu-20.04/bin/shasta \
     --input ${reads} \
-    --assemblyDirectory ${outdirectory}
+    --assemblyDirectory ${outdirectory} \
+    --config ${config}
     cat "./${outdirectory}/Assembly.fasta" > Assembly.fasta
   }
   #specify the output(s) of this task so cromwell will keep track of them
@@ -32,6 +35,8 @@ task shasta {
     File outFile = "Assembly.fasta"
   }
   runtime {
-    docker: docker_image
+    docker: "dfb4c6502ea1"
+    memory: RAM + "GB"
+    cpus: threadCount
   }
 }

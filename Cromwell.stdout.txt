@@ -1,106 +1,140 @@
-	[2020-09-04 15:19:57,04] [info] Running with database db.url = jdbc:hsqldb:mem:294b82b3-ec39-4cca-aafa-19b1e6b0c220;shutdown=false;hsqldb.tx=mvcc
-	[2020-09-04 15:20:05,59] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-	[2020-09-04 15:20:05,60] [info] [RenameWorkflowOptionsInMetadata] 100%
-	[2020-09-04 15:20:05,70] [info] Running with database db.url = jdbc:hsqldb:mem:ea52eb94-78c4-494b-8381-9c6accfe7dc2;shutdown=false;hsqldb.tx=mvcc
-	[2020-09-04 15:20:06,22] [info] Slf4jLogger started
-	[2020-09-04 15:20:06,59] [info] Workflow heartbeat configuration:
+	[2020-09-09 15:44:38,14] [info] Running with database db.url = jdbc:hsqldb:mem:a6b0813d-95dd-458c-9a1b-cde4f125db1f;shutdown=false;hsqldb.tx=mvcc
+	[2020-09-09 15:44:46,24] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+	[2020-09-09 15:44:46,25] [info] [RenameWorkflowOptionsInMetadata] 100%
+	[2020-09-09 15:44:46,36] [info] Running with database db.url = jdbc:hsqldb:mem:45541512-ce9e-4dd3-bcb1-cd3eb3d578a4;shutdown=false;hsqldb.tx=mvcc
+	[2020-09-09 15:44:46,82] [info] Slf4jLogger started
+	[2020-09-09 15:44:47,13] [info] Workflow heartbeat configuration:
 	{
-	  "cromwellId" : "cromid-6ee65f8",
+	  "cromwellId" : "cromid-a7bd61a",
 	  "heartbeatInterval" : "2 minutes",
 	  "ttl" : "10 minutes",
 	  "failureShutdownDuration" : "5 minutes",
 	  "writeBatchSize" : 10000,
 	  "writeThreshold" : 10000
 	}
-	[2020-09-04 15:20:06,67] [info] Metadata summary refreshing every 1 second.
-	[2020-09-04 15:20:06,72] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
-	[2020-09-04 15:20:06,72] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-	[2020-09-04 15:20:06,75] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-	[2020-09-04 15:20:06,75] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-	[2020-09-04 15:20:06,81] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-	[2020-09-04 15:20:06,85] [info] SingleWorkflowRunnerActor: Version 44
-	[2020-09-04 15:20:06,86] [info] SingleWorkflowRunnerActor: Submitting workflow
-	[2020-09-04 15:20:06,92] [info] Unspecified type (Unspecified version) workflow c107fd20-559b-4cf4-806f-7d3d5f9145b2 submitted
-	[2020-09-04 15:20:06,94] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2mc107fd20-559b-4cf4-806f-7d3d5f9145b2[0m
-	[2020-09-04 15:20:06,95] [info] 1 new workflows fetched by cromid-6ee65f8: c107fd20-559b-4cf4-806f-7d3d5f9145b2
-	[2020-09-04 15:20:06,96] [info] WorkflowManagerActor Starting workflow [38;5;2mc107fd20-559b-4cf4-806f-7d3d5f9145b2[0m
-	[2020-09-04 15:20:06,97] [info] WorkflowManagerActor Successfully started WorkflowActor-c107fd20-559b-4cf4-806f-7d3d5f9145b2
-	[2020-09-04 15:20:06,97] [info] Retrieved 1 workflows from the WorkflowStoreActor
-	[2020-09-04 15:20:07,00] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-	[2020-09-04 15:20:07,10] [info] MaterializeWorkflowDescriptorActor [[38;5;2mc107fd20[0m]: Parsing workflow as WDL 1.0
-	[2020-09-04 15:20:07,91] [info] MaterializeWorkflowDescriptorActor [[38;5;2mc107fd20[0m]: Call-to-Backend assignments: shastaWorkflow.shasta -> Local
-	[2020-09-04 15:20:09,52] [info] WorkflowExecutionActor-c107fd20-559b-4cf4-806f-7d3d5f9145b2 [[38;5;2mc107fd20[0m]: Starting shastaWorkflow.shasta
-	[2020-09-04 15:20:09,84] [info] Assigned new job execution tokens to the following groups: c107fd20: 1
-	[2020-09-04 15:20:11,21] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mc107fd20[0mshastaWorkflow.shasta:NA:1]: [38;5;5m/usr/src/shasta-Linux-0.5.1 \
-	--input /cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/inputs/1798486972/20.fasta \
-	--assemblyDirectory ShastaRun
+	[2020-09-09 15:44:47,20] [info] Metadata summary refreshing every 1 second.
+	[2020-09-09 15:44:47,23] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
+	[2020-09-09 15:44:47,24] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+	[2020-09-09 15:44:47,26] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+	[2020-09-09 15:44:47,26] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+	[2020-09-09 15:44:47,34] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+	[2020-09-09 15:44:47,38] [info] SingleWorkflowRunnerActor: Version 44
+	[2020-09-09 15:44:47,40] [info] SingleWorkflowRunnerActor: Submitting workflow
+	[2020-09-09 15:44:47,46] [info] Unspecified type (Unspecified version) workflow f9935590-872d-468a-9bdc-6ed86150bfb1 submitted
+	[2020-09-09 15:44:47,48] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2mf9935590-872d-468a-9bdc-6ed86150bfb1[0m
+	[2020-09-09 15:44:47,48] [info] 1 new workflows fetched by cromid-a7bd61a: f9935590-872d-468a-9bdc-6ed86150bfb1
+	[2020-09-09 15:44:47,50] [info] WorkflowManagerActor Starting workflow [38;5;2mf9935590-872d-468a-9bdc-6ed86150bfb1[0m
+	[2020-09-09 15:44:47,51] [info] WorkflowManagerActor Successfully started WorkflowActor-f9935590-872d-468a-9bdc-6ed86150bfb1
+	[2020-09-09 15:44:47,51] [info] Retrieved 1 workflows from the WorkflowStoreActor
+	[2020-09-09 15:44:47,54] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+	[2020-09-09 15:44:47,64] [info] MaterializeWorkflowDescriptorActor [[38;5;2mf9935590[0m]: Parsing workflow as WDL 1.0
+	[2020-09-09 15:44:48,40] [info] MaterializeWorkflowDescriptorActor [[38;5;2mf9935590[0m]: Call-to-Backend assignments: shastaWorkflow.shasta -> Local
+	[2020-09-09 15:44:48,74] [[38;5;220mwarn[0m] Local [[38;5;2mf9935590[0m]: Key/s [memory, cpus] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+	[2020-09-09 15:44:49,95] [info] WorkflowExecutionActor-f9935590-872d-468a-9bdc-6ed86150bfb1 [[38;5;2mf9935590[0m]: Starting shastaWorkflow.shasta
+	[2020-09-09 15:44:50,36] [info] Assigned new job execution tokens to the following groups: f9935590: 1
+	[2020-09-09 15:44:51,87] [[38;5;220mwarn[0m] BackendPreparationActor_for_f9935590:shastaWorkflow.shasta:-1:1 [[38;5;2mf9935590[0m]: Docker lookup failed
+	java.lang.Exception: Unauthorized to get docker hash dfb4c6502ea1:latest
+		at cromwell.engine.workflow.WorkflowDockerLookupActor.cromwell$engine$workflow$WorkflowDockerLookupActor$$handleLookupFailure(WorkflowDockerLookupActor.scala:194)
+		at cromwell.engine.workflow.WorkflowDockerLookupActor$$anonfun$3.applyOrElse(WorkflowDockerLookupActor.scala:86)
+		at cromwell.engine.workflow.WorkflowDockerLookupActor$$anonfun$3.applyOrElse(WorkflowDockerLookupActor.scala:70)
+		at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:34)
+		at akka.actor.FSM.processEvent(FSM.scala:684)
+		at akka.actor.FSM.processEvent$(FSM.scala:681)
+		at cromwell.engine.workflow.WorkflowDockerLookupActor.akka$actor$LoggingFSM$$super$processEvent(WorkflowDockerLookupActor.scala:37)
+		at akka.actor.LoggingFSM.processEvent(FSM.scala:820)
+		at akka.actor.LoggingFSM.processEvent$(FSM.scala:802)
+		at cromwell.engine.workflow.WorkflowDockerLookupActor.processEvent(WorkflowDockerLookupActor.scala:37)
+		at akka.actor.FSM.akka$actor$FSM$$processMsg(FSM.scala:678)
+		at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:672)
+		at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:34)
+		at cromwell.docker.DockerClientHelper$$anonfun$dockerResponseReceive$1.applyOrElse(DockerClientHelper.scala:16)
+		at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+		at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+		at akka.actor.Actor.aroundReceive(Actor.scala:517)
+		at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+		at cromwell.engine.workflow.WorkflowDockerLookupActor.aroundReceive(WorkflowDockerLookupActor.scala:37)
+		at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+		at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+		at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+		at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+		at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+		at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+		at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+		at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+		at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	
+	[2020-09-09 15:44:51,95] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: Unrecognized runtime attribute keys: cpus, memory
+	[2020-09-09 15:44:52,14] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: [38;5;5m/usr/src/shasta-Ubuntu-20.04/bin/shasta \
+	--input /cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/inputs/1798486972/20.fasta \
+	--assemblyDirectory ShastaRun \
+	--config /cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/inputs/1798486972/Nanopore-Jun2020.conf
 	cat "./ShastaRun/Assembly.fasta" > Assembly.fasta[0m
-	[2020-09-04 15:20:11,32] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mc107fd20[0mshastaWorkflow.shasta:NA:1]: executing: # make sure there is no preexisting Docker CID file
-	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/docker_cid
+	[2020-09-09 15:44:52,27] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: executing: # make sure there is no preexisting Docker CID file
+	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/docker_cid
 	# run as in the original configuration without --rm flag (will remove later)
 	docker run \
-	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/docker_cid \
+	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/docker_cid \
 	  -i \
 	   \
 	  --entrypoint /bin/bash \
-	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta:/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta:delegated \
-	  quay.io/nolwarre/shasta@sha256:951c8267e8d2026ec48c8c88a2d9879d427602dce1933ac12d62fe5b2f264d19 /cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/script
+	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta:/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta:delegated \
+	  dfb4c6502ea1 /cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/script
 	
 	# get the return code (working even if the container was detached)
-	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/docker_cid[0m)
+	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/docker_cid[0m)
 	
 	# remove the container after waiting
-	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/docker_cid[0m
+	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/docker_cid[0m
 	
 	# return exit code
 	exit $rc
-	[2020-09-04 15:20:11,75] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mc107fd20[0mshastaWorkflow.shasta:NA:1]: job id: 53800
-	[2020-09-04 15:20:11,76] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mc107fd20[0mshastaWorkflow.shasta:NA:1]: Status change from - to WaitingForReturnCode
-	[2020-09-04 15:20:11,82] [info] Not triggering log of token queue status. Effective log interval = None
-	[2020-09-04 15:21:12,16] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mc107fd20[0mshastaWorkflow.shasta:NA:1]: Status change from WaitingForReturnCode to Done
-	[2020-09-04 15:21:13,80] [info] WorkflowExecutionActor-c107fd20-559b-4cf4-806f-7d3d5f9145b2 [[38;5;2mc107fd20[0m]: Workflow shastaWorkflow complete. Final Outputs:
+	[2020-09-09 15:44:52,36] [info] Not triggering log of token queue status. Effective log interval = None
+	[2020-09-09 15:44:57,28] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: job id: 65542
+	[2020-09-09 15:44:57,28] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: Status change from - to WaitingForReturnCode
+	[2020-09-09 15:47:19,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2mf9935590[0mshastaWorkflow.shasta:NA:1]: Status change from WaitingForReturnCode to Done
+	[2020-09-09 15:47:20,95] [info] WorkflowExecutionActor-f9935590-872d-468a-9bdc-6ed86150bfb1 [[38;5;2mf9935590[0m]: Workflow shastaWorkflow complete. Final Outputs:
 	{
-	  "shastaWorkflow.assembly": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/Assembly.fasta"
+	  "shastaWorkflow.assembly": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/Assembly.fasta"
 	}
-	[2020-09-04 15:21:13,84] [info] WorkflowManagerActor WorkflowActor-c107fd20-559b-4cf4-806f-7d3d5f9145b2 is in a terminal state: WorkflowSucceededState
-	[2020-09-04 15:21:31,74] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
+	[2020-09-09 15:47:20,99] [info] WorkflowManagerActor WorkflowActor-f9935590-872d-468a-9bdc-6ed86150bfb1 is in a terminal state: WorkflowSucceededState
+	[2020-09-09 15:47:49,89] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
 	{
 	  "outputs": {
-	    "shastaWorkflow.assembly": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599257992954-0/cromwell-executions/shastaWorkflow/c107fd20-559b-4cf4-806f-7d3d5f9145b2/call-shasta/execution/Assembly.fasta"
+	    "shastaWorkflow.assembly": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1599691475006-0/cromwell-executions/shastaWorkflow/f9935590-872d-468a-9bdc-6ed86150bfb1/call-shasta/execution/Assembly.fasta"
 	  },
-	  "id": "c107fd20-559b-4cf4-806f-7d3d5f9145b2"
+	  "id": "f9935590-872d-468a-9bdc-6ed86150bfb1"
 	}
-	[2020-09-04 15:21:36,78] [info] Workflow polling stopped
-	[2020-09-04 15:21:36,79] [info] 0 workflows released by cromid-6ee65f8
-	[2020-09-04 15:21:36,79] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-	[2020-09-04 15:21:36,79] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-	[2020-09-04 15:21:36,80] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-	[2020-09-04 15:21:36,80] [info] Aborting all running workflows.
-	[2020-09-04 15:21:36,80] [info] JobExecutionTokenDispenser stopped
-	[2020-09-04 15:21:36,80] [info] WorkflowStoreActor stopped
-	[2020-09-04 15:21:36,80] [info] WorkflowLogCopyRouter stopped
-	[2020-09-04 15:21:36,80] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-	[2020-09-04 15:21:36,80] [info] WorkflowManagerActor stopped
-	[2020-09-04 15:21:36,80] [info] WorkflowManagerActor All workflows finished
-	[2020-09-04 15:21:37,02] [info] Connection pools shut down
-	[2020-09-04 15:21:37,02] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] SubWorkflowStoreActor stopped
-	[2020-09-04 15:21:37,02] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-	[2020-09-04 15:21:37,02] [info] Shutting down IoProxy - Timeout = 1800 seconds
-	[2020-09-04 15:21:37,02] [info] JobStoreActor stopped
-	[2020-09-04 15:21:37,02] [info] CallCacheWriteActor stopped
-	[2020-09-04 15:21:37,02] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-	[2020-09-04 15:21:37,02] [info] KvWriteActor Shutting down: 0 queued messages to process
-	[2020-09-04 15:21:37,02] [info] IoProxy stopped
-	[2020-09-04 15:21:37,02] [info] ServiceRegistryActor stopped
-	[2020-09-04 15:21:37,02] [info] DockerHashActor stopped
-	[2020-09-04 15:21:37,05] [info] Database closed
-	[2020-09-04 15:21:37,05] [info] Stream materializer shut down
-	[2020-09-04 15:21:37,05] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
-	[2020-09-04 15:21:37,05] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
-	[2020-09-04 15:21:37,05] [info] WDL HTTP import resolver closed
-	[2020-09-04 15:21:37,06] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-09 15:47:52,30] [info] Workflow polling stopped
+	[2020-09-09 15:47:52,31] [info] 0 workflows released by cromid-a7bd61a
+	[2020-09-09 15:47:52,32] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
+	[2020-09-09 15:47:52,32] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
+	[2020-09-09 15:47:52,32] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
+	[2020-09-09 15:47:52,32] [info] Aborting all running workflows.
+	[2020-09-09 15:47:52,32] [info] JobExecutionTokenDispenser stopped
+	[2020-09-09 15:47:52,33] [info] WorkflowStoreActor stopped
+	[2020-09-09 15:47:52,33] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
+	[2020-09-09 15:47:52,33] [info] WorkflowLogCopyRouter stopped
+	[2020-09-09 15:47:52,33] [info] WorkflowManagerActor All workflows finished
+	[2020-09-09 15:47:52,33] [info] WorkflowManagerActor stopped
+	[2020-09-09 15:47:52,57] [info] Connection pools shut down
+	[2020-09-09 15:47:52,57] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] SubWorkflowStoreActor stopped
+	[2020-09-09 15:47:52,57] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] Shutting down IoProxy - Timeout = 1800 seconds
+	[2020-09-09 15:47:52,57] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
+	[2020-09-09 15:47:52,57] [info] JobStoreActor stopped
+	[2020-09-09 15:47:52,58] [info] CallCacheWriteActor stopped
+	[2020-09-09 15:47:52,58] [info] WriteMetadataActor Shutting down: 0 queued messages to process
+	[2020-09-09 15:47:52,58] [info] KvWriteActor Shutting down: 0 queued messages to process
+	[2020-09-09 15:47:52,58] [info] IoProxy stopped
+	[2020-09-09 15:47:52,58] [info] ServiceRegistryActor stopped
+	[2020-09-09 15:47:52,58] [info] DockerHashActor stopped
+	[2020-09-09 15:47:52,62] [info] Database closed
+	[2020-09-09 15:47:52,62] [info] Stream materializer shut down
+	[2020-09-09 15:47:52,72] [info] WDL HTTP import resolver closed
+	[2020-09-09 15:47:52,73] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-09 15:47:52,73] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-09 15:47:52,73] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
