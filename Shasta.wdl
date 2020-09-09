@@ -35,7 +35,7 @@ task shasta {
     File outFile = "Assembly.fasta"
   }
   runtime {
-    docker: "dfb4c6502ea1"
+    docker: docker_image
     memory: RAM + "GB"
     cpus: threadCount
   }
