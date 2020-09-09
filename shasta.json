@@ -3,4 +3,6 @@
   "shastaWorkflow.shasta.config": "/Users/nolwarre/Shasta/Data/Nanopore-Jun2020.conf",
   "shastaWorkflow.shasta.outdirectory": "ShastaRun",
   "shastaWorkflow.shasta.docker_image": "quay.io/nolwarre/shasta:latest",
+  "shastaWorkflow.shasta.RAM": "8",
+  "shastaWorkflow.shasta.threadCount": "1",
 }
