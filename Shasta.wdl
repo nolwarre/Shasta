@@ -22,7 +22,6 @@ task shasta {
     Int threadCount
   }
   #define command to execute when this task runs
-  #implementing config in the command will result in input not being read.
   command {
     /usr/src/shasta-Ubuntu-20.04/bin/shasta \
     --input ${reads} \

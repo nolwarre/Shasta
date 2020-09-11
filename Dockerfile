@@ -1,7 +1,7 @@
 # set the base image
 FROM ubuntu:20.04
 
-MAINTAINER Noah Warren <nolwarre@ucsc.edu># install dependencies
+MAINTAINER Noah Warren <nolwarre@ucsc.edu>
 
 USER root
 
