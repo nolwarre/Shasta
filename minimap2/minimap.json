@@ -2,11 +2,11 @@
   "minimapWorkflow.minimap.reads": "/Users/nolwarre/Shasta/Data/20.fasta",
   "minimapWorkflow.minimap.assembly": "/Users/nolwarre/Shasta/Data/Assembly.fasta",
   "minimapWorkflow.minimap.max_threads": "1",
-  "minimapWorkflow.minimap.docker_image": "quay.io/nolwarre/shasta:latest",
+  "minimapWorkflow.minimap.docker_image": "quay.io/nolwarre/minimap2_workflow:latest",
   "minimapWorkflow.minimap.RAM": "8",
   "minimapWorkflow.minimap.threadCount": "2",
   "minimapWorkflow.samtools.max_threads": "1",
-  "minimapWorkflow.samtools.docker_image": "quay.io/nolwarre/shasta:latest",
+  "minimapWorkflow.samtools.docker_image": "quay.io/nolwarre/minimap2_workflow:latest",
   "minimapWorkflow.samtools.RAM": "8",
   "minimapWorkflow.samtools.threadCount": "2",
 }

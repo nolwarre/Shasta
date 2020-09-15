@@ -37,7 +37,7 @@ task minimap {
     File sam_alignment = "alignment.sam"
   }
   runtime {
-    docker: "bd0a61c9e802"
+    docker: docker_image
     memory: RAM + "GB"
     cpus: threadCount
   }
@@ -63,7 +63,7 @@ task samtools {
     File sorted_bam = "alignment.sort.bam"
   }
   runtime {
-    docker: "bd0a61c9e802"
+    docker: docker_image
     memory: RAM + "GB"
     cpus: threadCount
   }
