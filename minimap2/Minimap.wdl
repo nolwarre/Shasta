@@ -27,14 +27,17 @@ task minimap {
   }
   #define command to execute when this task runs
   command {
-
+    minimap2 -a -x map-ont -t \
+    ${max_threads} \
+    ${assembly} \
+    ${reads} > alignment.sam
   }
   #specify the output(s) of this task so cromwell will keep track of them
   output {
     File sam_alignment = "alignment.sam"
   }
   runtime {
-    docker: docker_image
+    docker: "bd0a61c9e802"
     memory: RAM + "GB"
     cpus: threadCount
   }
@@ -51,14 +54,16 @@ task samtools {
   }
   #define command to execute when this task runs
   command {
-
+    samtools sort -O BAM -@ ${max_threads} -o alignment.sorted.bam ${alignment}
+    samtools index -@ ${max_threads} alignment.sorted.bam
+    cat alignment.sorted.bam > alignment.sort.bam
   }
   #specify the output(s) of this task so cromwell will keep track of them
   output {
     File sorted_bam = "alignment.sort.bam"
   }
   runtime {
-    docker: docker_image
+    docker: "bd0a61c9e802"
     memory: RAM + "GB"
     cpus: threadCount
   }
