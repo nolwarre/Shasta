@@ -12,7 +12,10 @@ workflow minimapWorkflow {
       input:
         alignment = minimap.sam_alignment
    }
-   output { File sorted_bam = samtools.sorted_bam}
+   output {
+   File sorted_bam = samtools.sorted_bam
+   File bam_index = samtools.bam_index
+   }
 }
 #define the 'minimap' task
 task minimap {

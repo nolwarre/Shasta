@@ -1,136 +1,138 @@
-	[2020-09-16 16:12:34,28] [info] Running with database db.url = jdbc:hsqldb:mem:74db9bfc-1965-4872-8ea7-07d306745d5b;shutdown=false;hsqldb.tx=mvcc
-	[2020-09-16 16:12:41,89] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-	[2020-09-16 16:12:41,91] [info] [RenameWorkflowOptionsInMetadata] 100%
-	[2020-09-16 16:12:42,01] [info] Running with database db.url = jdbc:hsqldb:mem:5071d8c5-5fb2-430e-a920-5ea9e583a55d;shutdown=false;hsqldb.tx=mvcc
-	[2020-09-16 16:12:42,46] [info] Slf4jLogger started
-	[2020-09-16 16:12:42,80] [info] Workflow heartbeat configuration:
+	[2020-09-16 16:15:56,24] [info] Running with database db.url = jdbc:hsqldb:mem:7c343e0a-62da-415f-99a8-363c09902a84;shutdown=false;hsqldb.tx=mvcc
+	[2020-09-16 16:16:03,68] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+	[2020-09-16 16:16:03,69] [info] [RenameWorkflowOptionsInMetadata] 100%
+	[2020-09-16 16:16:03,78] [info] Running with database db.url = jdbc:hsqldb:mem:ebb3ce3c-3298-4dee-889f-6d9b699e5a4b;shutdown=false;hsqldb.tx=mvcc
+	[2020-09-16 16:16:04,19] [info] Slf4jLogger started
+	[2020-09-16 16:16:04,50] [info] Workflow heartbeat configuration:
 	{
-	  "cromwellId" : "cromid-f1fb267",
+	  "cromwellId" : "cromid-5a77729",
 	  "heartbeatInterval" : "2 minutes",
 	  "ttl" : "10 minutes",
 	  "failureShutdownDuration" : "5 minutes",
 	  "writeBatchSize" : 10000,
 	  "writeThreshold" : 10000
 	}
-	[2020-09-16 16:12:42,87] [info] Metadata summary refreshing every 1 second.
-	[2020-09-16 16:12:42,93] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-	[2020-09-16 16:12:42,93] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
-	[2020-09-16 16:12:42,93] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-	[2020-09-16 16:12:43,19] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-	[2020-09-16 16:12:43,23] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-	[2020-09-16 16:12:43,29] [info] SingleWorkflowRunnerActor: Version 44
-	[2020-09-16 16:12:43,30] [info] SingleWorkflowRunnerActor: Submitting workflow
-	[2020-09-16 16:12:43,36] [info] Unspecified type (Unspecified version) workflow 8db0d955-f4b9-4a3a-b0cc-0caab62b9594 submitted
-	[2020-09-16 16:12:43,39] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m8db0d955-f4b9-4a3a-b0cc-0caab62b9594[0m
-	[2020-09-16 16:12:43,39] [info] 1 new workflows fetched by cromid-f1fb267: 8db0d955-f4b9-4a3a-b0cc-0caab62b9594
-	[2020-09-16 16:12:43,41] [info] WorkflowManagerActor Starting workflow [38;5;2m8db0d955-f4b9-4a3a-b0cc-0caab62b9594[0m
-	[2020-09-16 16:12:43,43] [info] WorkflowManagerActor Successfully started WorkflowActor-8db0d955-f4b9-4a3a-b0cc-0caab62b9594
-	[2020-09-16 16:12:43,43] [info] Retrieved 1 workflows from the WorkflowStoreActor
-	[2020-09-16 16:12:43,45] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-	[2020-09-16 16:12:43,55] [info] MaterializeWorkflowDescriptorActor [[38;5;2m8db0d955[0m]: Parsing workflow as WDL 1.0
-	[2020-09-16 16:12:44,37] [info] MaterializeWorkflowDescriptorActor [[38;5;2m8db0d955[0m]: Call-to-Backend assignments: minimapWorkflow.samtools -> Local, minimapWorkflow.minimap -> Local
-	[2020-09-16 16:12:44,56] [[38;5;220mwarn[0m] Local [[38;5;2m8db0d955[0m]: Key/s [memory, cpus] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-	[2020-09-16 16:12:44,56] [[38;5;220mwarn[0m] Local [[38;5;2m8db0d955[0m]: Key/s [memory, cpus] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-	[2020-09-16 16:12:45,75] [info] WorkflowExecutionActor-8db0d955-f4b9-4a3a-b0cc-0caab62b9594 [[38;5;2m8db0d955[0m]: Starting minimapWorkflow.minimap
-	[2020-09-16 16:12:46,25] [info] Assigned new job execution tokens to the following groups: 8db0d955: 1
-	[2020-09-16 16:12:47,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: Unrecognized runtime attribute keys: cpus, memory
-	[2020-09-16 16:12:47,45] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: [38;5;5mminimap2 -a -x map-ont -t \
+	[2020-09-16 16:16:04,57] [info] Metadata summary refreshing every 1 second.
+	[2020-09-16 16:16:04,59] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+	[2020-09-16 16:16:04,59] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
+	[2020-09-16 16:16:04,60] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+	[2020-09-16 16:16:04,82] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+	[2020-09-16 16:16:04,85] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+	[2020-09-16 16:16:04,88] [info] SingleWorkflowRunnerActor: Version 44
+	[2020-09-16 16:16:04,89] [info] SingleWorkflowRunnerActor: Submitting workflow
+	[2020-09-16 16:16:04,93] [info] Unspecified type (Unspecified version) workflow 31abb0c1-bf64-48ab-b978-ed560e39eb6c submitted
+	[2020-09-16 16:16:04,95] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m31abb0c1-bf64-48ab-b978-ed560e39eb6c[0m
+	[2020-09-16 16:16:04,96] [info] 1 new workflows fetched by cromid-5a77729: 31abb0c1-bf64-48ab-b978-ed560e39eb6c
+	[2020-09-16 16:16:04,97] [info] WorkflowManagerActor Starting workflow [38;5;2m31abb0c1-bf64-48ab-b978-ed560e39eb6c[0m
+	[2020-09-16 16:16:04,98] [info] WorkflowManagerActor Successfully started WorkflowActor-31abb0c1-bf64-48ab-b978-ed560e39eb6c
+	[2020-09-16 16:16:04,98] [info] Retrieved 1 workflows from the WorkflowStoreActor
+	[2020-09-16 16:16:05,01] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+	[2020-09-16 16:16:05,10] [info] MaterializeWorkflowDescriptorActor [[38;5;2m31abb0c1[0m]: Parsing workflow as WDL 1.0
+	[2020-09-16 16:16:05,83] [info] MaterializeWorkflowDescriptorActor [[38;5;2m31abb0c1[0m]: Call-to-Backend assignments: minimapWorkflow.samtools -> Local, minimapWorkflow.minimap -> Local
+	[2020-09-16 16:16:06,02] [[38;5;220mwarn[0m] Local [[38;5;2m31abb0c1[0m]: Key/s [memory, cpus] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+	[2020-09-16 16:16:06,02] [[38;5;220mwarn[0m] Local [[38;5;2m31abb0c1[0m]: Key/s [memory, cpus] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+	[2020-09-16 16:16:07,19] [info] WorkflowExecutionActor-31abb0c1-bf64-48ab-b978-ed560e39eb6c [[38;5;2m31abb0c1[0m]: Starting minimapWorkflow.minimap
+	[2020-09-16 16:16:07,87] [info] Assigned new job execution tokens to the following groups: 31abb0c1: 1
+	[2020-09-16 16:16:08,99] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: Unrecognized runtime attribute keys: cpus, memory
+	[2020-09-16 16:16:09,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: [38;5;5mminimap2 -a -x map-ont -t \
 	1 \
-	/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/inputs/1798486972/Assembly.fasta \
-	/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/inputs/1798486972/20.fasta > 20.sam[0m
-	[2020-09-16 16:12:47,52] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: executing: # make sure there is no preexisting Docker CID file
-	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/execution/docker_cid
+	/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/inputs/1798486972/Assembly.fasta \
+	/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/inputs/1798486972/20.fasta > 20.sam[0m
+	[2020-09-16 16:16:09,13] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: executing: # make sure there is no preexisting Docker CID file
+	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/execution/docker_cid
 	# run as in the original configuration without --rm flag (will remove later)
 	docker run \
-	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/execution/docker_cid \
+	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/execution/docker_cid \
 	  -i \
 	   \
 	  --entrypoint /bin/bash \
-	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap:/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap:delegated \
-	  quay.io/nolwarre/minimap2_workflow@sha256:b78449c0e8dc6a0cdd859c188554ba907f7ebbb3abbdce302bc30f67a8d38df6 /cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/execution/script
+	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap:/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap:delegated \
+	  quay.io/nolwarre/minimap2_workflow@sha256:b78449c0e8dc6a0cdd859c188554ba907f7ebbb3abbdce302bc30f67a8d38df6 /cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/execution/script
 	
 	# get the return code (working even if the container was detached)
-	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/execution/docker_cid[0m)
+	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/execution/docker_cid[0m)
 	
 	# remove the container after waiting
-	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-minimap/execution/docker_cid[0m
+	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-minimap/execution/docker_cid[0m
 	
 	# return exit code
 	exit $rc
-	[2020-09-16 16:12:47,96] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: job id: 4536
-	[2020-09-16 16:12:47,97] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: Status change from - to WaitingForReturnCode
-	[2020-09-16 16:12:48,24] [info] Not triggering log of token queue status. Effective log interval = None
-	[2020-09-16 16:13:25,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.minimap:NA:1]: Status change from WaitingForReturnCode to Done
-	[2020-09-16 16:13:26,57] [info] WorkflowExecutionActor-8db0d955-f4b9-4a3a-b0cc-0caab62b9594 [[38;5;2m8db0d955[0m]: Starting minimapWorkflow.samtools
-	[2020-09-16 16:13:27,24] [info] Assigned new job execution tokens to the following groups: 8db0d955: 1
-	[2020-09-16 16:13:27,25] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: Unrecognized runtime attribute keys: cpus, memory
-	[2020-09-16 16:13:27,26] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: [38;5;5msamtools sort -O BAM -@ 1 -o 20.bam /cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/inputs/228440687/20.sam
+	[2020-09-16 16:16:09,62] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: job id: 4594
+	[2020-09-16 16:16:09,63] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: Status change from - to WaitingForReturnCode
+	[2020-09-16 16:16:09,86] [info] Not triggering log of token queue status. Effective log interval = None
+	[2020-09-16 16:16:44,62] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.minimap:NA:1]: Status change from WaitingForReturnCode to Done
+	[2020-09-16 16:16:45,97] [info] WorkflowExecutionActor-31abb0c1-bf64-48ab-b978-ed560e39eb6c [[38;5;2m31abb0c1[0m]: Starting minimapWorkflow.samtools
+	[2020-09-16 16:16:46,86] [info] Assigned new job execution tokens to the following groups: 31abb0c1: 1
+	[2020-09-16 16:16:46,87] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: Unrecognized runtime attribute keys: cpus, memory
+	[2020-09-16 16:16:46,88] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: [38;5;5msamtools sort -O BAM -@ 1 -o 20.bam /cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/inputs/-1299792788/20.sam
 	samtools index -@ 1 20.bam[0m
-	[2020-09-16 16:13:27,26] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: executing: # make sure there is no preexisting Docker CID file
-	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/docker_cid
+	[2020-09-16 16:16:46,88] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: executing: # make sure there is no preexisting Docker CID file
+	rm -f /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/docker_cid
 	# run as in the original configuration without --rm flag (will remove later)
 	docker run \
-	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/docker_cid \
+	  --cidfile /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/docker_cid \
 	  -i \
 	   \
 	  --entrypoint /bin/bash \
-	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools:/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools:delegated \
-	  quay.io/nolwarre/minimap2_workflow@sha256:b78449c0e8dc6a0cdd859c188554ba907f7ebbb3abbdce302bc30f67a8d38df6 /cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/script
+	  -v /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools:/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools:delegated \
+	  quay.io/nolwarre/minimap2_workflow@sha256:b78449c0e8dc6a0cdd859c188554ba907f7ebbb3abbdce302bc30f67a8d38df6 /cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/script
 	
 	# get the return code (working even if the container was detached)
-	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/docker_cid[0m)
+	rc=$(docker wait [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/docker_cid[0m)
 	
 	# remove the container after waiting
-	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/docker_cid[0m
+	docker rm [38;5;5mcat /private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/docker_cid[0m
 	
 	# return exit code
 	exit $rc
-	[2020-09-16 16:13:27,95] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: job id: 4546
-	[2020-09-16 16:13:27,95] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: Status change from - to WaitingForReturnCode
-	[2020-09-16 16:13:38,32] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m8db0d955[0mminimapWorkflow.samtools:NA:1]: Status change from WaitingForReturnCode to Done
-	[2020-09-16 16:13:39,84] [info] WorkflowExecutionActor-8db0d955-f4b9-4a3a-b0cc-0caab62b9594 [[38;5;2m8db0d955[0m]: Workflow minimapWorkflow complete. Final Outputs:
+	[2020-09-16 16:16:49,61] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: job id: 4609
+	[2020-09-16 16:16:49,61] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: Status change from - to WaitingForReturnCode
+	[2020-09-16 16:16:58,04] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m31abb0c1[0mminimapWorkflow.samtools:NA:1]: Status change from WaitingForReturnCode to Done
+	[2020-09-16 16:16:59,24] [info] WorkflowExecutionActor-31abb0c1-bf64-48ab-b978-ed560e39eb6c [[38;5;2m31abb0c1[0m]: Workflow minimapWorkflow complete. Final Outputs:
 	{
-	  "minimapWorkflow.sorted_bam": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/20.bam"
+	  "minimapWorkflow.bam_index": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/20.bam.bai",
+	  "minimapWorkflow.sorted_bam": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/20.bam"
 	}
-	[2020-09-16 16:13:39,87] [info] WorkflowManagerActor WorkflowActor-8db0d955-f4b9-4a3a-b0cc-0caab62b9594 is in a terminal state: WorkflowSucceededState
-	[2020-09-16 16:13:46,63] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
+	[2020-09-16 16:16:59,27] [info] WorkflowManagerActor WorkflowActor-31abb0c1-bf64-48ab-b978-ed560e39eb6c is in a terminal state: WorkflowSucceededState
+	[2020-09-16 16:17:06,62] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
 	{
 	  "outputs": {
-	    "minimapWorkflow.sorted_bam": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600297950678-0/cromwell-executions/minimapWorkflow/8db0d955-f4b9-4a3a-b0cc-0caab62b9594/call-samtools/execution/20.bam"
+	    "minimapWorkflow.sorted_bam": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/20.bam",
+	    "minimapWorkflow.bam_index": "/private/var/folders/kc/m8ls5b1x1pb69dd796c03sr80000gq/T/1600298152773-0/cromwell-executions/minimapWorkflow/31abb0c1-bf64-48ab-b978-ed560e39eb6c/call-samtools/execution/20.bam.bai"
 	  },
-	  "id": "8db0d955-f4b9-4a3a-b0cc-0caab62b9594"
+	  "id": "31abb0c1-bf64-48ab-b978-ed560e39eb6c"
 	}
-	[2020-09-16 16:13:47,99] [info] Workflow polling stopped
-	[2020-09-16 16:13:48,00] [info] 0 workflows released by cromid-f1fb267
-	[2020-09-16 16:13:48,00] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-	[2020-09-16 16:13:48,00] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-	[2020-09-16 16:13:48,00] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-	[2020-09-16 16:13:48,00] [info] Aborting all running workflows.
-	[2020-09-16 16:13:48,01] [info] JobExecutionTokenDispenser stopped
-	[2020-09-16 16:13:48,01] [info] WorkflowStoreActor stopped
-	[2020-09-16 16:13:48,01] [info] WorkflowLogCopyRouter stopped
-	[2020-09-16 16:13:48,01] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-	[2020-09-16 16:13:48,01] [info] WorkflowManagerActor All workflows finished
-	[2020-09-16 16:13:48,01] [info] WorkflowManagerActor stopped
-	[2020-09-16 16:13:48,20] [info] Connection pools shut down
-	[2020-09-16 16:13:48,20] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,20] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,20] [info] SubWorkflowStoreActor stopped
-	[2020-09-16 16:13:48,20] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,21] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,21] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,21] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-	[2020-09-16 16:13:48,21] [info] Shutting down IoProxy - Timeout = 1800 seconds
-	[2020-09-16 16:13:48,21] [info] JobStoreActor stopped
-	[2020-09-16 16:13:48,21] [info] CallCacheWriteActor stopped
-	[2020-09-16 16:13:48,21] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-	[2020-09-16 16:13:48,21] [info] KvWriteActor Shutting down: 0 queued messages to process
-	[2020-09-16 16:13:48,21] [info] DockerHashActor stopped
-	[2020-09-16 16:13:48,21] [info] IoProxy stopped
-	[2020-09-16 16:13:48,21] [info] ServiceRegistryActor stopped
-	[2020-09-16 16:13:48,23] [info] Database closed
-	[2020-09-16 16:13:48,23] [info] Stream materializer shut down
-	[2020-09-16 16:13:48,23] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
-	[2020-09-16 16:13:48,23] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
-	[2020-09-16 16:13:48,23] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
-	[2020-09-16 16:13:48,24] [info] WDL HTTP import resolver closed
+	[2020-09-16 16:17:09,64] [info] Workflow polling stopped
+	[2020-09-16 16:17:09,65] [info] 0 workflows released by cromid-5a77729
+	[2020-09-16 16:17:09,65] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
+	[2020-09-16 16:17:09,66] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
+	[2020-09-16 16:17:09,66] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
+	[2020-09-16 16:17:09,66] [info] Aborting all running workflows.
+	[2020-09-16 16:17:09,66] [info] JobExecutionTokenDispenser stopped
+	[2020-09-16 16:17:09,66] [info] WorkflowStoreActor stopped
+	[2020-09-16 16:17:09,67] [info] WorkflowLogCopyRouter stopped
+	[2020-09-16 16:17:09,67] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
+	[2020-09-16 16:17:09,67] [info] WorkflowManagerActor All workflows finished
+	[2020-09-16 16:17:09,67] [info] WorkflowManagerActor stopped
+	[2020-09-16 16:17:09,87] [info] Connection pools shut down
+	[2020-09-16 16:17:09,87] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] SubWorkflowStoreActor stopped
+	[2020-09-16 16:17:09,87] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] Shutting down IoProxy - Timeout = 1800 seconds
+	[2020-09-16 16:17:09,87] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
+	[2020-09-16 16:17:09,87] [info] JobStoreActor stopped
+	[2020-09-16 16:17:09,87] [info] CallCacheWriteActor stopped
+	[2020-09-16 16:17:09,87] [info] KvWriteActor Shutting down: 0 queued messages to process
+	[2020-09-16 16:17:09,87] [info] WriteMetadataActor Shutting down: 0 queued messages to process
+	[2020-09-16 16:17:09,87] [info] IoProxy stopped
+	[2020-09-16 16:17:09,87] [info] DockerHashActor stopped
+	[2020-09-16 16:17:09,87] [info] ServiceRegistryActor stopped
+	[2020-09-16 16:17:09,90] [info] Database closed
+	[2020-09-16 16:17:09,90] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-16 16:17:09,90] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-16 16:17:09,90] [info] Stream materializer shut down
+	[2020-09-16 16:17:09,90] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+	[2020-09-16 16:17:09,90] [info] WDL HTTP import resolver closed
