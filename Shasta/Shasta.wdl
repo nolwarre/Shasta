@@ -22,16 +22,17 @@ task shasta {
     Int threadCount
   }
   #define command to execute when this task runs
+  String AssemblyName = basename(reads,".fasta") + "_Assembly.fasta"
   command {
     /usr/src/shasta-Ubuntu-20.04/bin/shasta \
     --input ${reads} \
     --assemblyDirectory ${outdirectory} \
     --config ${config}
-    cat "./${outdirectory}/Assembly.fasta" > Assembly.fasta
+    cat "./${outdirectory}/Assembly.fasta" > ${AssemblyName}
   }
   #specify the output(s) of this task so cromwell will keep track of them
   output {
-    File outFile = "Assembly.fasta"
+    File outFile = "${AssemblyName}"
   }
   runtime {
     docker: docker_image
