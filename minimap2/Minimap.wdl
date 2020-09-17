@@ -27,6 +27,7 @@ task minimap {
     Int RAM
     Int threadCount
   }
+  #make alignment file based on name of reads file
   String sam_alignment = basename(reads,".fasta") + ".sam"
   #define command to execute when this task runs
   command {
@@ -55,6 +56,7 @@ task samtools {
     Int RAM
     Int threadCount
   }
+  #make bam file based on name of alignment file
   String bam_alignment = basename(alignment,".sam") + ".bam"
   #define command to execute when this task runs
   command {

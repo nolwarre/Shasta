@@ -21,8 +21,9 @@ task shasta {
     Int RAM
     Int threadCount
   }
-  #define command to execute when this task runs
+  #make assembly file based on name of reads
   String AssemblyName = basename(reads,".fasta") + "_Assembly.fasta"
+  #define command to execute when this task runs
   command {
     /usr/src/shasta-Ubuntu-20.04/bin/shasta \
     --input ${reads} \
