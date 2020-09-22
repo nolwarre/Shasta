@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+   - name: Shasta
+     subclass: WDL
+     primaryDescriptorPath: /Shasta/Shasta.wdl
+   - name: minimap2
+     subclass: WDL
+     primaryDescriptorPath: /minimap2/Minimap.wdl
