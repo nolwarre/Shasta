@@ -3,6 +3,10 @@ workflows:
    - name: Shasta
      subclass: WDL
      primaryDescriptorPath: /Shasta/Shasta.wdl
+     testParameterFiles:
+     - /Shasta/shasta.json
    - name: minimap2
      subclass: WDL
      primaryDescriptorPath: /minimap2/Minimap.wdl
+     testParameterFiles:
+     - /minimap2/minimap.json
