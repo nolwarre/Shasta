@@ -8,5 +8,5 @@
   "minimapWorkflow.samtools.max_threads": "1",
   "minimapWorkflow.samtools.docker_image": "quay.io/nolwarre/minimap2_workflow:latest",
   "minimapWorkflow.samtools.RAM": "8",
-  "minimapWorkflow.samtools.threadCount": "2",
+  "minimapWorkflow.samtools.threadCount": "2"
 }

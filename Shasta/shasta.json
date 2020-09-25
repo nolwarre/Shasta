@@ -4,5 +4,5 @@
   "shastaWorkflow.shasta.outdirectory": "ShastaRun",
   "shastaWorkflow.shasta.docker_image": "quay.io/nolwarre/shasta_workflow:latest",
   "shastaWorkflow.shasta.RAM": "8",
-  "shastaWorkflow.shasta.threadCount": "1",
+  "shastaWorkflow.shasta.threadCount": "1"
 }
