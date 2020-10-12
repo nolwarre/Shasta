@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # update and install dependencies
 RUN apt-get update && \
-    apt-get remove -y protobuf-compile && \
+    apt-get remove -y protobuf-compiler && \
     apt-get install -y build-essential git cmake make gcc g++ autoconf ca-certificates \
     bzip2 lzma-dev zlib1g-dev libjpeg-dev libpng-dev\
     libcurl4-openssl-dev libpthread-stubs0-dev libbz2-dev liblzma-dev libhdf5-dev \
