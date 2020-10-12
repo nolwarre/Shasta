@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # update and install dependencies
 RUN apt-get update && \
-    apt-get install -y build--essential git cmake make gcc g++ autoconf ca-certificates \
+    apt-get install -y build-essential git cmake make gcc g++ autoconf ca-certificates \
     bzip2 lzma-dev zlib1g-dev libjpeg-dev libpng-dev\
     libcurl4-openssl-dev libpthread-stubs0-dev libbz2-dev liblzma-dev libhdf5-dev \
     python3-pip python3-virtualenv &&\
