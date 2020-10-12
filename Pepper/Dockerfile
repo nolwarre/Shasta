@@ -10,7 +10,9 @@ RUN apt-get update && \
     apt-get install -y build-essential git cmake make gcc g++ autoconf ca-certificates \
     bzip2 lzma-dev zlib1g-dev libjpeg-dev libpng-dev\
     libcurl4-openssl-dev libpthread-stubs0-dev libbz2-dev liblzma-dev libhdf5-dev \
-    python3-pip python3-virtualenv &&\
+    python3-pip python3-virtualenv && \
+    apt-get remove protobuf-compiler && \
+    apt-get install protobuf-compiler && \
     apt-get clean && \
     apt-get purge && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
