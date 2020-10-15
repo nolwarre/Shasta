@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:latest
+FROM nvidia/cuda:latest
 
 MAINTAINER Noah Warren <nolwarre@ucsc.edu>
 
