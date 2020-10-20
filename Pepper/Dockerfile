@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=nvidia/cuda:11.1-base
+ARG BASE_IMAGE=nvidia/cuda:11.0-base
 ARG PYTHON_VERSION=3.8
 
 FROM ${BASE_IMAGE} as dev-base
