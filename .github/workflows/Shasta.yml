@@ -21,5 +21,10 @@ jobs:
     steps:
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.5
-    - run: conda --version
-    - run: which python
+    - name: verify conda
+      run: |
+          conda --version
+          which python
+    - name: Install wdltool
+      run: conda install -c bioconda wdltool
+    
