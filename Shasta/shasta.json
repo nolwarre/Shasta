@@ -1,6 +1,6 @@
 {
-  "shastaWorkflow.shasta.reads": "/Users/nolwarre/Shasta/Data/20.fasta",
-  "shastaWorkflow.shasta.config": "/Users/nolwarre/Shasta/Data/Nanopore-Jun2020.conf",
+  "shastaWorkflow.shasta.reads": "../Data/20.fasta",
+  "shastaWorkflow.shasta.config": "..Data/Nanopore-Jun2020.conf",
   "shastaWorkflow.shasta.outdirectory": "ShastaRun",
   "shastaWorkflow.shasta.docker_image": "quay.io/nolwarre/shasta_workflow:latest",
   "shastaWorkflow.shasta.RAM": "8",
