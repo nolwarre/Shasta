@@ -2,7 +2,7 @@
 
 name: shasta
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   push:
 
@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.6]
-    
+
     steps:
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.5
@@ -25,6 +25,13 @@ jobs:
       run: |
           conda --version
           which python
-    - name: Install wdltool
-      run: conda install -c bioconda wdltool
-    
+    - name: Install cromwell and womtool
+      run: |
+          conda config --add channels conda-forge
+          conda config --set channel_priority strict
+    - name: Cromwell enviornment
+      run: conda create -n cromwell cromwell
+    - name: validate with womtool
+      run: |
+          cd Shasta
+          womtool validate Shasta.wdl
