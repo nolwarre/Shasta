@@ -20,31 +20,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    # - name: setup-conda
-    #   uses: s-weigand/setup-conda@v1.0.5
-    # - name: verify conda
-    #   run: |
-    #       conda --version
-    #       which python
-    - name: setup java
+    - name: Setup Java
       uses: actions/setup-java@v1
       with:
         java-version: '8'
-    - name: verify java
+    - name: Verify Java
       run: java -version
-    - name: install cromwell and womtool
+    - name: Install Cromwell and Womtool
       run: |
           wget https://github.com/broadinstitute/cromwell/releases/download/58/cromwell-58.jar
           wget https://github.com/broadinstitute/cromwell/releases/download/58/womtool-58.jar
-    - name: verify cromwell
+    - name: Verify Cromwell and Womtool
       run: |
           java -jar cromwell-58.jar --version
           java -jar womtool-58.jar --version
-    - name: validate with womtool
+    - name: Validate wdl with Womtool
       run: java -jar womtool-58.jar validate Shasta/Shasta.wdl
-    - name: run with cromwell
-      run: java -jar cromwell-56.jar run Shasta/Shasta/Shasta.wdl -i Shasta/Shasta/shasta.json
-    # - name: Install womtool
-    #   run: conda install -yq -c bioconda womtool
-    # - name: validate with womtool
-    #   run: $CONDA/bin/womtool validate Shasta/Shasta.wdl
+    - name: Run wdl with Cromwell
+      run: java -jar cromwell-58.jar run Shasta/Shasta/Shasta.wdl -i Shasta/Shasta/shasta.json
