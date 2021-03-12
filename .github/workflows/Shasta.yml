@@ -21,21 +21,13 @@ jobs:
     steps:
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.5
-      with:
-        conda-channels: conda-forge
     - name: verify conda
       run: |
           conda --version
           which python
-    - name: Install cromwell and womtool
-      run: |
-          conda create -yq -n cromwell cromwell
-          conda init bash
-    - name: Cromwell enviornment
-      shell: bash -l {0}
-      run: conda activate cromwell
+    - name: Install womtool
+      run: conda install -c bioconda womtool
     - name: validate with womtool
       run: |
           ls
-          cd ./Shasta
-          womtool validate ./Shasta.wdl
+          conda run womtool validate ./Shasta/Shasta.wdl
