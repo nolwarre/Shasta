@@ -28,6 +28,4 @@ jobs:
     - name: Install womtool
       run: conda install -c bioconda womtool
     - name: validate with womtool
-      run: |
-          ls
-          conda run womtool validate ./Shasta/Shasta.wdl
+      run: conda run womtool validate Shasta/Shasta.wdl
