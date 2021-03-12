@@ -19,6 +19,7 @@ jobs:
         python-version: [3.6]
 
     steps:
+    - uses: actions/checkout@v2
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.5
     - name: verify conda
@@ -26,6 +27,6 @@ jobs:
           conda --version
           which python
     - name: Install womtool
-      run: conda install -c bioconda womtool
+      run: conda install -yq -c bioconda womtool
     - name: validate with womtool
-      run: conda run womtool validate Shasta/Shasta.wdl
+      run: $CONDA/bin/womtool validate Shasta/Shasta.wdl
