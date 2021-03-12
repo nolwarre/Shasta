@@ -37,4 +37,4 @@ jobs:
     - name: Validate wdl with Womtool
       run: java -jar womtool-58.jar validate Shasta/Shasta.wdl
     - name: Run wdl with Cromwell
-      run: java -jar cromwell-58.jar run Shasta/Shasta/Shasta.wdl -i Shasta/Shasta/shasta.json
+      run: java -jar cromwell-58.jar run Shasta/Shasta.wdl -i Shasta/shasta.json
