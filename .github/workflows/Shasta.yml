@@ -30,7 +30,7 @@ jobs:
     - name: Install cromwell and womtool
       run: |
           conda create -yq -n cromwell cromwell
-          conda init /usr/bin/bash
+          conda init bash
     - name: Cromwell enviornment
       run: conda activate cromwell
     - name: validate with womtool
