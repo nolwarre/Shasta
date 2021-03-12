@@ -29,9 +29,11 @@ jobs:
       run: |
           conda config --add channels conda-forge
           conda config --set channel_priority strict
+          conda create -yq -n cromwell cromwell
     - name: Cromwell enviornment
-      run: conda create -n cromwell cromwell
+      run: conda activate cromwell
     - name: validate with womtool
       run: |
-          cd Shasta
-          womtool validate Shasta.wdl
+          ls
+          cd ./Shasta
+          womtool validate ./Shasta.wdl
